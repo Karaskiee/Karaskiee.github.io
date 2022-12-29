@@ -1,0 +1,235 @@
+/* home&concat */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(tlo.png);
+  background-repeat: repeat-y;
+  scroll-behavior: smooth;
+}
+.hd-main {
+  display: flex;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 20vw;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 15vh;
+  width: 80vw;
+}
+.bookmarks {
+  display: flex;
+  margin-right: 8%;
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.bookmarks-active {
+  display: flex;
+  margin-right: 8%;
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00ccff;
+}
+.bookmarks:hover {
+  color: #00ccff;
+}
+#mood {
+  display: flex;
+  background-image: url("moodicon.png");
+  height: 50px;
+  width: 50px;
+  margin-right: 8%;
+  border: none;
+}
+.info-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.info {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  height: 45vh;
+  font-size: 16pt;
+  color: rgb(165, 165, 165);
+}
+.info b {
+  font-size: 24pt;
+  color: black;
+}
+.info i {
+  color: grey;
+}
+.photo {
+  height: 45vh;
+}
+.me {
+  border-radius: 25px;
+}
+.social {
+  clear: both;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.social img {
+  height: 75px;
+  width: 75px;
+}
+.social a {
+  margin-right: 7%;
+}
+
+/*Skills*/
+
+.info-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+}
+.skill-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.skill-bar {
+  height: 14px;
+  background-color: black;
+  border-radius: 8px;
+}
+.skill-per {
+  height: 14px;
+  background-color: #00ffff;
+  border-radius: 8px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+.skill-per::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #00ccff;
+  border-radius: 4px;
+  font-size: 12pt;
+  top: -35px;
+  right: 0px;
+  transform: translateX(50%);
+}
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #00ccff;
+  top: -15px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.social-skill {
+  clear: both;
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.social-skill img {
+  height: 75px;
+  width: 75px;
+}
+.social-skill a {
+  margin-right: 7%;
+}
+
+/*about-me*/
+
+.info-aboutme {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.text-main {
+  display: flex;
+  align-items: center;
+  width: 35vw;
+  height: 30vh;
+  font-size: 12pt;
+  color: black;
+}
+.photo-aboutme {
+  display: flex;
+  width: 10vw;
+  height: 30vh;
+}
+.social-aboutme {
+  clear: both;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.social-aboutme img {
+  height: 75px;
+  width: 75px;
+}
+.social-aboutme a {
+  margin-right: 7%;
+}
+
+/* works */
+
+.main-works {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.works-example {
+  text-align: center;
+  margin-left: 2%;
+}
+.social-works {
+  clear: both;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.social-works img {
+  height: 75px;
+  width: 75px;
+}
+.social-works a {
+  margin-right: 7%;
+}
